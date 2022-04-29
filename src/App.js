@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Header from "./components/Header";
 import Prefectures from "./components/Prefectures";
+import Graph from "./components/Graph";
 
 const App = () => {
   const [prefectureSelected, setSelected] = useState(
@@ -14,6 +15,7 @@ const App = () => {
           prefectureSelected={prefectureSelected}
           setSelected={(selectedData) => setSelected(selectedData)}
         />
+        <Graph prefectureSelected={prefectureSelected} />
       </body>
     </div>
   );
