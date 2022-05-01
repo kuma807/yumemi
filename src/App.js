@@ -53,6 +53,7 @@ const App = () => {
           setSelected={(selectedData) => setSelected(selectedData)}
         />
         <Graph
+          prefecturePopulationList={prefecturePopulationList}
           prefectureList={prefectureList}
           prefectureSelected={prefectureSelected}
         />
