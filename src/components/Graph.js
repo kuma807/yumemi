@@ -66,9 +66,13 @@ const Graph = ({
 
   const options = {
     title: {
-      text: "My chart",
+      text: "総人口推移",
+    },
+    yAxis: {
+      title: { text: "人口" },
     },
     xAxis: {
+      title: { text: "年度" },
       categories: getYearRange(displayPrefecturePopulationList),
     },
     series: makeGraphData(),
